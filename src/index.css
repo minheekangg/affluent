@@ -1,0 +1,103 @@
+/* INDEX PAGE */
+.index-nav-container{
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    z-index: 2;
+}
+.index-nav{
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.index-nav a{
+    width: 50%;
+    padding: 5%;
+    color: black;
+    
+}
+
+#aboutpage-1{
+    padding-top: 5%;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    margin: 0 auto;
+}
+#aboutpage-1 img{
+    width: 50%;
+    height: 100%;
+}
+#aboutpage-1 h1{
+    /* justify-content: center;
+    text-align: center;
+    width: 40%;
+    vertical-align: middle; */
+    font-size: 12vh;
+    color: red;
+    padding-top: 4vh;
+}
+#aboutpage-1 span{
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+#aboutpage-2{
+    /* padding: 3%; */
+    background-color: lightgray;
+    width: 100%;
+    justify-content: center;
+    /* text-align: center; */
+    height: 40vh;
+}
+#aboutpage-2 h5{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    color: darkred;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    font-size: 4vh;
+}
+#aboutpage-2-content{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    color: black;
+}
+#aboutpage-2-content div{
+    color: black;
+    width: 50%;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    text-align: left;
+    /* background-color: blue; */
+}
+
+#aboutpage-3{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: 50vh;
+    /* background-color: purple; */
+}
+div h5{
+    font-size: 4vh;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3%;
+}
+#aboutpage-3 div{
+    padding-top: 5vh;
+    margin: 0 auto;
+    width: 20%;
+}
+#aboutpage-3 div img{
+    width: 100%;
+    border: solid red;
+}
+
+/* INDEX PAGE */
