@@ -109,7 +109,7 @@ div h5{
 #aboutpage-4{
     width: 80%;
     margin: 0 auto;
-    height: 30vh;
+    height: 40vh;
     justify-content: center;
     text-align: center;
     padding: 1vh;
@@ -130,11 +130,22 @@ div h5{
     
 }
 
-footer{
+footer div{
     width: 100%;
     height: 30vh;
     background-color: black;
-    color: white
+    /* margin: 0 auto; */
+    display: flex;
+}
+footer div div{
+    /* height: 100%; */
+    width: 50%;
+    padding: 15vh;
+    text-align: right;
+    /* background-color: blue; */
+    color: grey;
+    font-size: 3vh;
+
 }
 
 /* INDEX PAGE */
