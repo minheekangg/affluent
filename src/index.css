@@ -1,3 +1,26 @@
+*{
+    font-family:  'Arial Narrow Bold', sans-serif
+    
+}
+
+/* NAVBAR */
+nav{
+    width: 100%;
+    /* background-color: white; */
+}
+.nav-wrapper{
+    width: 98%;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+}
+
+#nav-mobile li a{
+    color: black
+}
+/* NAVBAR */
+
+
 /* INDEX PAGE */
 .index-nav-container{
     margin: 0 auto;
@@ -8,7 +31,6 @@
 }
 .index-nav{
     background-color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
 .index-nav a{
@@ -149,3 +171,7 @@ footer div div{
 }
 
 /* INDEX PAGE */
+
+/* ABOUT PAGE */
+
+/* ABOUT PAGE */
