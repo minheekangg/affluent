@@ -129,23 +129,28 @@ div h5{
     width: 100%;
     border: solid var(--main-darkred);
 }
+/* INDEX PAGE */
 
-#aboutpage-4{
-    width: 80%;
+
+/* FOOTER */
+#start-here{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
     margin: 0 auto;
     height: 40vh;
     justify-content: center;
     text-align: center;
     padding: 1vh;
 }
-#aboutpage-4 span{
+#start-here span{
     text-align: center;
     font-size: 2vh;
     padding: 1vh;
     width: 100%;
     display: block
 }
-#aboutpage-4 button{
+#start-here button{
     background-color: var(--main-darkred);
     font-size:4vh;
     padding: 1%;
@@ -169,10 +174,10 @@ footer div div{
     /* background-color: blue; */
     color: grey;
     font-size: 3vh;
-
+    
 }
+/* FOOTER */
 
-/* INDEX PAGE */
 
 /* ABOUT PAGE */
 #about-top{
@@ -185,5 +190,40 @@ footer div div{
     text-align: center;
     color: white;
     font-size: 4vh;
+}
+
+#left-text-right-picture, #right-text-left-picture{
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    margin: 0 auto;
+
+}
+#right-text-left-picture{
+    background-color: lightgrey;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#left-text-right-picture span, #right-text-left-picture span{
+    width: 50%;
+    height: 100%;
+    display: block;
+    padding: 6vh;
+    font-size: 2.5vh;
+}
+#image-container{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: block;
+    padding: 5vh;
+    right: 0;
+}
+#image-container img{
+    width: 100%;
+    height: 100%;
+    /* padding: 5vh; */
+    border: solid var(--main-darkred);
 }
 /* ABOUT PAGE */
