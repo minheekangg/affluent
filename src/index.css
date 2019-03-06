@@ -1,6 +1,8 @@
-*{
-    font-family:  'Arial Narrow Bold', sans-serif
-    
+:root{
+    font-family:  'Arial Narrow Bold', sans-serif;
+    --main-darkred: rgb(200, 47, 47);
+
+
 }
 
 /* NAVBAR */
@@ -56,7 +58,7 @@ nav{
     width: 40%;
     vertical-align: middle; */
     font-size: 12vh;
-    color: red;
+    color: var(--main-darkred);
     padding-top: 4vh;
 }
 #aboutpage-1 span{
@@ -76,7 +78,7 @@ nav{
     width: 80%;
     display: flex;
     margin: 0 auto;
-    color: darkred;
+    color: var(--main-darkred);
     padding-top: 5%;
     padding-bottom: 1%;
     padding-left: 5%;
@@ -117,7 +119,7 @@ div h5{
     width: 20%;
 }
 #aboutpage-3 div div{
-    color: darkred;
+    color: var(--main-darkred);
     font-size: 2.5vh;
     padding-bottom: 2vh;
     width: 100%;
@@ -125,7 +127,7 @@ div h5{
 }
 #aboutpage-3 div img{
     width: 100%;
-    border: solid darkred
+    border: solid var(--main-darkred)
 }
 
 #aboutpage-4{
@@ -144,7 +146,7 @@ div h5{
     display: block
 }
 #aboutpage-4 button{
-    background-color: darkred;
+    background-color: var(--main-darkred);
     font-size:4vh;
     padding: 1%;
     color: white;
@@ -173,5 +175,15 @@ footer div div{
 /* INDEX PAGE */
 
 /* ABOUT PAGE */
-
+#about-top{
+    width: 100%;
+    background-color: var(--main-darkred);
+    height: 35vh;
+    padding: 12vh;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 4vh;
+}
 /* ABOUT PAGE */
