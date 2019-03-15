@@ -152,7 +152,8 @@ div h5{
     vertical-align: middle;
     justify-content: center;
     text-align: center;
-    /* padding: 1vh; */
+    /* display: table-cell; */
+    padding-top: 5%;
 }
 #start-here span{
     text-align: center;
