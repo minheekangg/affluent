@@ -79,8 +79,9 @@ nav{
     background-color: lightgray;
     width: 100%;
     justify-content: center;
+    vertical-align: middle;
     /* text-align: center; */
-    height: 40vh;
+    height: 50vh;
 }
 #aboutpage-2 h5{
     width: 80%;
@@ -112,7 +113,7 @@ nav{
     width: 80%;
     margin: 0 auto;
     height: 50vh;
-    margin-bottom: 7vh;
+    /* margin-bottom: 7vh; */
 }
 div h5{
     font-size: 4vh;
@@ -144,13 +145,14 @@ div h5{
 #start-here{
     font-family: var(--main-font);
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
     margin: 0 auto;
-    height: 40vh;
+    height: 50vh;
+    vertical-align: middle;
     justify-content: center;
     text-align: center;
-    padding: 1vh;
+    /* padding: 1vh; */
 }
 #start-here span{
     text-align: center;
