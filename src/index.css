@@ -2,7 +2,7 @@
     font-family: "Helvetica Rounded", Arial, sans-serif;
     --main-darkred: rgb(200, 47, 47);
     --main-font: "Arial Rounded MT Bold"
-
+    width: 100vh;
 }
 
 
@@ -11,12 +11,17 @@ nav{
     width: 100%;
     font-family: var(--main-font);
     overflow: hidden;
+    z-index: 2;
+    color: black;
+}
+
+.hidden{
+    visibility: hidden;
 }
 .nav-wrapper{
     width: 98%;
     margin: 0 auto;
     background-color: white;
-    color: black;
 }
 
 #nav-mobile li a{
