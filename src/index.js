@@ -4,32 +4,30 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     const navbar1 = document.querySelector("#nav1");
     const navbar2 = document.querySelector("#nav2");
+    const navbars = document.querySelector("nav")
 
-    return navbar1 ? renderIndexHTMLNav() : renderStickyNavBar(navbar2)
+    window.onscroll = function () { 
+        if (navbar1) {
+            renderIndexHTMLNav()
+        } else {
+            renderStickyNavBar(navbar2)
+        }
+    };
 
     function renderStickyNavBar(navbar2, navbar1){
-        window.onscroll = function () { myFunction() };
-        var sticky = document.querySelector("nav").offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar2.classList.add("sticky")
-                navbar1.classList.add("sticky")
+        if (window.pageYOffset >= navbars.offsetTop) {
+              navbar2.classList.add("sticky");
+              navbar1.classList.add("sticky");
             } else {
-                navbar2.classList.remove("sticky");
-                navbar1.classList.remove("sticky");
+              navbar2.classList.remove("sticky");
+              navbar1.classList.remove("sticky");
             }
-        }
-
     }
-
 
     function renderIndexHTMLNav() {
         
         renderStickyNavBar(navbar2, navbar1);
 
-
-        // CHANGE INDEX.HTML NAVBAR
         var mainbottom =
           $("#aboutpage-1").offset().top + $("#aboutpage-1").height();
         // on scroll, 
