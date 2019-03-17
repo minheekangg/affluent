@@ -188,6 +188,9 @@ nav{
     text-align: center;
     letter-spacing: .5px;
 }
+.col-md-3 h4{
+    text-align: center;
+}
 
 #aboutpage-3 .col-md-3 p{
     padding: 5% 5% 0% 5%;
