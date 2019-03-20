@@ -1,6 +1,8 @@
 :root{
     font-family: "Helvetica Rounded", Arial, sans-serif;
-    --main-darkred: rgb(200, 47, 47);
+    --main-lightgreen: #1ABC9C;
+    --main-darkblue: #34495e;
+    --main-lightgrey: #F8F9F8;
     --main-font: "Arial Rounded MT Bold"
     width: 100vh;
 }
@@ -44,7 +46,11 @@ nav{
 /* INDEX PAGE */
 .index-nav-container{
     margin: 0 auto;
+<<<<<<< HEAD
 /* /    justify-content: center; */
+=======
+/   justify-content: center;
+>>>>>>> franco_branch
     width: 100%;
     height: 10vh;
     z-index: 2;
@@ -57,11 +63,12 @@ nav{
     width: 50%;
     padding: 5%;
     color: black;
+    font-size: 15px ;
     
 }
 #aboutpage-1{
     padding-top: 5%;
-    padding-bottom: 30%;
+    padding-bottom: 15%;
     min-height: 700px
 }
 #aboutpage-1 img{
@@ -72,17 +79,24 @@ nav{
     justify-content: left;
     text-align: left;   
     font-size: 10vh;
-    color: var(--main-darkred);
+    color: var(--main-lightgreen);
     padding-bottom: 3vh;
 }
+
+/*@media screen and (min-width: 48em){
+    #aboutpage-1 h1{
+        justify-content: center;
+    }
+}*/
+
 #aboutpage-1 span{
     font-weight: bold;
-    font-size: 2.5vh;
-    padding-bottom: 1vh;
+    color: var(--main-darkblue);
+    font-size: 3vh;
     letter-spacing: 1px;
 }
 #aboutpage-1 h6{
-    font-size: 5vh;
+    font-size: 2vh;
     letter-spacing: 1px;
     line-height: 150%;
 }
@@ -93,9 +107,9 @@ nav{
 }
 
 #aboutpage-2{
-    padding-top: 1%;
-    padding-bottom: 5%;
-    background-color: #FCF9F9;
+    padding-top: 2%;
+    padding-bottom: 6%;
+    background-color: var(--main-darkblue);
     width: 100%;
     justify-content: center;
     vertical-align: middle;
@@ -106,36 +120,35 @@ nav{
     width: 80%;
     display: flex;
     margin: 0 auto;
-    color: var(--main-darkred);
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
+    color: var(--main-lightgreen);
+    padding: 5% 0% 2% 5%;
     font-size: 6vh;
     font-weight:bold;
     letter-spacing: 1px;
 }
 
 #aboutpage-2 h4{
-    font-size: 3.5vh;
+    font-size: 3vh;
     font-color: #3F3E3E;
     font-weight:bold;
-    letter-spacing: 1px;
+    letter-spacing: 2.5px;
+    padding-bottom:%;
 }
 
 #aboutpage-2 p{
-    font-size: 2.5vh;
-    font-color: #3F3E3E;
+    font-size: 2vh;
     letter-spacing: 1px;
+    line-height: 160%;
+    font-weight:;
 }
 
 #aboutpage-2-content{
     width: 80%;
     display: flex;
     margin: 0 auto;
-    color: black;
 }
 #aboutpage-2-content div{
-    color: black;
+    color: #fff;
     width: 50%;
     padding-left: 10vh;
     padding-right: 10vh;
@@ -151,7 +164,7 @@ nav{
     /* margin-bottom: 7vh; 
 } */
 
-#aboutpage-3 h5{
+#aboutpage-3 h5, #aboutpage-4 h5{
     font-size: 5vh;
     font-weight:bold;
     width: 80%;
@@ -171,6 +184,7 @@ nav{
 
 }
 #aboutpage-3 div div{
+<<<<<<< HEAD
     padding-top: 1vh;
     width: 100%;
     /* text-align: center; */
@@ -178,6 +192,9 @@ nav{
 
 /* #aboutpage-3 div div div{
     color: var(--main-darkred);
+=======
+    color: var(--main-lightgreen);
+>>>>>>> franco_branch
     font-size: 2.5vh;
     font-weight:bold;
     padding-bottom: 3vh;
@@ -205,7 +222,7 @@ nav{
 
 #aboutpage-3 img{
     width: 50%;
-    /*border: solid var(--main-darkred); */
+    /*border: solid var(--main-lightgreen); */
 }
 
 #about3_row1 {
@@ -218,19 +235,94 @@ nav{
 }
 
 #aboutpage-4{
-    padding-top: 1%;
-    padding-bottom: 5%;
-    background-color: #FCF9F9;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-color: var(--main-lightgrey);
     width: 100%;
     justify-content: center;
     vertical-align: middle;
     /* text-align: center; */
-
 }
 
+#aboutpage-4 h5{
+    color:var(--main-darkblue);
+}
+
+<<<<<<< HEAD
 #steps{
     width: 50%;
     display: block;
+=======
+ul.how_grid_works {
+    position: relative;
+    list-style-type: none;     
+    text-align: left;
+}
+
+ul.how_grid_works {
+    position: relative;
+}
+ul.how_grid_works:before {
+    content: "";
+    position: absolute;
+    left: 55px;
+    height: 90%;
+    width: 5px;
+    background: var(--main-lightgreen);
+    top: 0;
+}
+
+.feature-icon {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+
+.feature-icon .icon {
+    border: 10px solid var(--main-darkblue);
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+}
+
+
+.feature-icon .content_work {
+    display: inline-block;
+}
+.feature-icon .icon > div {
+    background: #fff;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 85px;
+}
+
+.feature-icon .icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.feature-icon .content_work {
+    margin-left: 150px;
+    margin-top: 4px;
+}
+
+span.step {
+    font-size: 20px;
+    font-style: bold;
+    letter-spacing: 1px;
+    color: var(--main-lightgreen);
+}
+
+.feature-icon .content_work p{
+    font-size:2vh;
+}
+
+.feature-icon .content_work h4{
+    font-size:2.5vh;
+>>>>>>> franco_branch
 }
 
 /* INDEX PAGE */
@@ -258,7 +350,7 @@ nav{
     display: block
 }
 #start-here button{
-    background-color: var(--main-darkred);
+    background-color: var(--main-lightgreen);
     font-size:4vh;
     padding: 1%;
     color: white;
@@ -305,9 +397,8 @@ footer div div{
 /* ABOUT PAGE */
 #about-top{
     width: 100%;
-    background-color: var(--main-darkred);
+    background-color: var(--main-lightgreen);
     height: 35vh;
-    padding: 12vh;
     vertical-align: middle;
     justify-content: center;
     text-align: center;
@@ -315,15 +406,22 @@ footer div div{
     font-size: 4vh;
 }
 
+
+#about-top h2{
+    padding: 7% 10% 5% 10%;
+    letter-spacing: 1px;
+    line-height: 130%;
+}
+
 #left-text-right-picture, #right-text-left-picture{
     width: 80%;
-    height: 50vh;
+    height: 75vh;
     display: flex;
     margin: 0 auto;
 
 }
 #right-text-left-picture{
-    background-color: #F5F5F4;
+    background-color: #FCF9F9;
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
@@ -332,9 +430,17 @@ footer div div{
     width: 50%;
     height: 100%;
     display: block;
-    padding: 6vh;
-    font-size: 2.5vh;
+    padding: 50px;
+    font-size: 3vh;
+    letter-spacing:1px;
 }
+
+#left-text-right-picture h3, #right-text-left-picture h3{
+    font-size: 5vh;
+    padding-top:15%;
+    padding-bottom:5%;
+}
+
 #image-container{
     width: 50%;
     height: 100%;
@@ -345,8 +451,8 @@ footer div div{
 }
 #image-container img{
     width: 100%;
-    height: 100%;
     /* padding: 5vh; */
-    border: solid var(--main-darkred);
 }
+
+
 /* ABOUT PAGE */
