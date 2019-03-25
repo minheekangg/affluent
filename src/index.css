@@ -63,12 +63,16 @@ nav{
     
 }
 #aboutpage-1{
+    overflow: auto;
     padding-top: 5%;
     padding-bottom: 15%;
-    min-height: 700px
-}
+    /* min-height: 700px */
+   
+}       
+
 #aboutpage-1 img{
     width: 90%;
+    padding: 5%;
 }
 
 #aboutpage-1 h1{
@@ -98,8 +102,16 @@ nav{
 }
 
 #aboutpage-1-content{
-    height: 500px;
+    height: 60vh;
     position: relative;
+    animation-name: intro;
+    animation-duration: 2s;
+}
+
+
+@keyframes intro {
+    0%   { transform: translateY(-200%) }
+    100% { transform: translateY(0%) }
 }
 
 #aboutpage-2{
@@ -446,3 +458,18 @@ footer div div{
 
 
 /* ABOUT PAGE */
+
+@media only screen and (max-width: 1000px){
+    #aboutpage-1-content{
+        left: 40%;
+        animation-name: intro;
+        animation-duration: 2s;
+        /* text-align: center; */
+        /* align-content: center; */
+        /* margin: 0 auto; */
+    }
+    @keyframes intro {
+        0%   { left:0px; }
+        100% { left:40%; }
+    }       
+}
