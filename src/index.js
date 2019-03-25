@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
         if (navbar1) {
             renderIndexHTMLNav()
         } else {
-            renderStickyNavBar(navbar2)
+            renderSecondStickyNavBar(navbar2);
         }
     };
 
-    function renderStickyNavBar(navbar2, navbar1){
+    function renderBothStickyNavBar(navbar2, navbar1){
         if (window.pageYOffset >= navbars.offsetTop) {
               navbar2.classList.add("sticky");
               navbar1.classList.add("sticky");
@@ -23,10 +23,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
               navbar1.classList.remove("sticky");
             }
     }
+    function renderSecondStickyNavBar(navbar2){
+        if (window.pageYOffset >= navbars.offsetTop) {
+              navbar2.classList.add("sticky");
+            } else {
+              navbar2.classList.remove("sticky");
+            }
+    }
 
     function renderIndexHTMLNav() {
         
-        renderStickyNavBar(navbar2, navbar1);
+        navbar1 ? renderBothStickyNavBar(navbar2, navbar1) : renderSecondStickyNavBar(navbar2)
 
         var mainbottom =
           $("#aboutpage-1").offset().top + $("#aboutpage-1").height();
