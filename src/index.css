@@ -3,6 +3,7 @@
     --color-lightgreen: #1ABC9C;
     --color-darkblue: #34495e;
     --color-lightgrey: #F8F9F8;
+    --color-grey-background: #FCF9F9;
     --main-font: "Arial Rounded MT Bold";
 }
 
@@ -64,9 +65,8 @@ nav{
 #aboutpage-1{
     overflow: auto;
     padding-top: 5%;
-    padding-bottom: 15%;
+    padding-bottom: 8%;
     /* min-height: 700px */
-   
 }       
 
 #aboutpage-1 img{
@@ -82,11 +82,6 @@ nav{
     padding-bottom: 3vh;
 }
 
-/*@media screen and (min-width: 48em){
-    #aboutpage-1 h1{
-        justify-content: center;
-    }
-}*/
 
 #aboutpage-1 span{
     font-weight: bold;
@@ -219,45 +214,85 @@ nav{
     padding-bottom: 5%;
 }
 
+/* GRAPH SECTION */
+.graph-emergency{
+    justify-content: center;
+    text-align: center;
+}
+.graph-emergency h4{
+    top: 0;
+    font-size: 6vh;
+    text-align: center;
+    margin-top: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+   justify-content: center;
+}
+
+.graph-emergency button{
+    background-color: var(--color-lightgreen);
+    font-size:2vh;
+    padding: 5%;
+    color: white;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15%;
+    
+}
+/* GRAPH SECTION */
+
+
 #aboutpage-4{
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 10%;
-    background-color: var(--$color-lightgrey);
+    background-color: var(--color-lightgrey);
     width: 100%;
     justify-content: center;
     vertical-align: middle;
 }
 
 #aboutpage-4 h5{
-    color: var(--color-darkblue)
+    color: var(--color-lightgreen);
 }
 
-#steps{
-    width: 50%;
-    display: block;
-}
-ul.how_grid_works {
-    position: relative;
-    list-style-type: none;     
-    text-align: left;
+.steps{
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
-ul.how_grid_works {
-    position: relative;
+.steps .feature-icon{
+    /* width: 100%; */
+    margin: 0 auto;
+    padding-left: 30%;
 }
-ul.how_grid_works:before {
+
+.feature-icon .icon{
+    z-index: 1;
+}
+
+.step-content{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 45%;
+}
+
+
+
+.feature-icon:before {
     content: "";
     position: absolute;
-    left: 55px;
-    height: 90%;
-    width: 5px;
+    left: 15%;
+    height: 10px;
+    width: 70%;
+    top: 50px;
     background: var(--color-lightgreen);
-    top: 0;
-}
-
-.feature-icon {
-    position: relative;
-    margin-bottom: 5rem;
+    right: 0;
+    z-index: 0;
 }
 
 
@@ -270,9 +305,6 @@ ul.how_grid_works:before {
 }
 
 
-.feature-icon .content_work {
-    display: inline-block;
-}
 .feature-icon .icon > div {
     background: #fff;
     width: 85px;
@@ -290,6 +322,7 @@ ul.how_grid_works:before {
 .feature-icon .content_work {
     margin-left: 150px;
     margin-top: 4px;
+    display: block;
 }
 
 span.step {
@@ -328,7 +361,7 @@ span.step {
     width: 100%;
     display: block
 }
-#start-here button{
+.start-here-button{
     background-color: var(--color-lightgreen);
     font-size:4vh;
     padding: 1%;
