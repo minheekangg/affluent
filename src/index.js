@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     const navbar1 = document.querySelector("#nav1");
     const navbar2 = document.querySelector("#nav2");
-    const navbars = document.querySelector("nav")
+    const navbars = document.querySelector("nav");
+    const steps = document.querySelectorAll('.icon');
+    console.log(steps)
 
     window.onscroll = function () { 
         if (navbar1) {
