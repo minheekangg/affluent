@@ -171,6 +171,15 @@ nav{
     height: 50vh;
     /* margin-bottom: 7vh; 
 } */
+#aboutpage-3 div div div{
+    animation-name: about3_div;
+    animation-duration: 3s;
+}
+
+@keyframes about3_div {
+     0%   { left:-200%; }
+     100% { left:0%; }
+}
 
 #aboutpage-3 h5, #aboutpage-4 h5{
     font-size: 5vh;
@@ -204,7 +213,7 @@ nav{
     padding-bottom: 3vh;
     width: 100%;
     text-align: center;
-}*/ */
+}*/
 
 #aboutpage-3 .col-md-3 h4{
     padding-top: 5%;
@@ -472,4 +481,10 @@ footer div div{
         0%   { left:0px; }
         100% { left:40%; }
     }       
+}
+@media only screen and (max-width: 764px){
+    .container{
+       width: 90%;
+    }
+    
 }
